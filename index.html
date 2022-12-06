@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c3c7af3293.js" crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div id="navbar" class="pe-4">
+        <div class="container-fluid pt-3">
+            <div class="row">
+                <div class="col-xl-4 col-md-6 text-center">
+                    <h2 class="item">color of ball :</h2>
+                    <div id="colors" class="dropdown">
+                        <button type="button" id="color-btn" class="dropdown-toggle" data-bs-toggle="dropdown">choose a color</button>
+                        <ul id="colorList" class="dropdown-menu">
+                            <li id="red" class="dropdown-item">red</li>
+                            <li id="yellow" class="dropdown-item">yellow</li>
+                            <li id="orange" class="dropdown-item">orange</li>
+                            <li id="blue" class="dropdown-item">blue</li>
+                            <li id="green" class="dropdown-item">green</li>
+                            <li id="purple" class="dropdown-item">purple</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6 my-2 my-md-0 text-center">
+                    <h2 class="item pe-2">speed of ball :</h2>
+                    <input id="speed" type="range" min="10" max="50" step="10" value="10">
+                    <span id="speedValue" class="badge bg-danger ms-2">10 m/s</span>
+                </div>
+                <div class="col-xl-4 col-md-12 mt-md-2 mt-xl-0 text-center">
+                    <h2 class="item">size of ball :</h2>
+                    <div id="ball-size" class="d-inline ms-2">
+                        <button id="small">Small</button>
+                        <button id="medium">Medium</button>
+                        <button id="large">Large</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <canvas></canvas>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
